@@ -1,0 +1,68 @@
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;      /* 继承父元素的文字颜色 */
+    text-decoration: none;   /* 取消下划线 */
+}
+
+a:visited {
+    color: inherit;      /* 使已访问过的链接保持相同的颜色 */
+}
+
+a:hover, a:active {
+    color: inherit;      /* 使鼠标悬停和点击时的颜色保持一致 */
+    text-decoration: none;   /* 取消鼠标悬停和点击时的下划线 */
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.logo-img{
+    margin-top: 16px;
+    margin-right: 5px;
+    width: 55px;
+    height: 55px;
+
+}
+
+
+.t1 {
+    color: #303233;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.t2 {
+    color: #000;
+    font-family: HarmonyOS Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn {
+    margin-top: 43px;
+    display: flex;
+    width: 296px;
+    height: 40px;
+    padding: 4px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #7444F9;
+    color: #FFF;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
