@@ -3,17 +3,23 @@ p {
 }
 
 a {
-    color: inherit;      /* 继承父元素的文字颜色 */
-    text-decoration: none;   /* 取消下划线 */
+    color: inherit;
+    /* 继承父元素的文字颜色 */
+    text-decoration: none;
+    /* 取消下划线 */
 }
 
 a:visited {
-    color: inherit;      /* 使已访问过的链接保持相同的颜色 */
+    color: inherit;
+    /* 使已访问过的链接保持相同的颜色 */
 }
 
-a:hover, a:active {
-    color: inherit;      /* 使鼠标悬停和点击时的颜色保持一致 */
-    text-decoration: none;   /* 取消鼠标悬停和点击时的下划线 */
+a:hover,
+a:active {
+    color: inherit;
+    /* 使鼠标悬停和点击时的颜色保持一致 */
+    text-decoration: none;
+    /* 取消鼠标悬停和点击时的下划线 */
 }
 
 .logo {
@@ -22,12 +28,11 @@ a:hover, a:active {
     margin-bottom: 10px;
 }
 
-.logo-img{
+.logo-img {
     margin-top: 16px;
     margin-right: 5px;
     width: 55px;
     height: 55px;
-
 }
 
 
@@ -39,7 +44,25 @@ a:hover, a:active {
     line-height: normal;
 }
 
+.t1-1 {
+    color: #303233;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .t2 {
+    color: #000;
+    font-family: HarmonyOS Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 47px
+}
+
+.t2-1 {
     color: #000;
     font-family: HarmonyOS Sans;
     font-size: 24px;
@@ -66,3 +89,56 @@ a:hover, a:active {
     outline: inherit;
 }
 
+.background-image {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .t1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .t1-1 {
+        font-size: 30px;
+    }
+
+    .t2 {
+        font-size: 18px;
+        padding: 4px 24px;
+        margin-top: 50px;
+    }
+
+    .t2-1 {
+        font-size: 18px;
+        padding: 4px 24px;
+        margin-top: 30px;
+    }
+
+    .logo-img {
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn {
+        width: 200px;
+        height: 35px;
+        padding: 2px 12px;
+        margin-top: 10px;
+    }
+
+
+
+
+
+    .background-image {
+        background-image: url('background.png');
+        width: 1000px;
+        /* 或者其他你需要的宽度 */
+        height: 1000px;
+        /* 或者其他你需要的高度 */
+        transform: rotate(90deg);
+    }
+}
